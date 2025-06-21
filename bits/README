@@ -1,15 +1,53 @@
 
-Various ways to test bits
+//Various ways to test bits
 
-
+// Form1
 unsigned int b00(unsigned a) { return (a & 0x0001) == 0x0; }
 unsigned int b00(unsigned a) { return (a & 0x0001) != 0x0; }
 
-unsigned int b00(unsigned a) { return (a >> 0x01)  == 0x0; }
-unsigned int b00(unsigned a) { return (a >> 0x01)  != 0x0; }
+// Form2
+unsigned int b00(unsigned a) { return ((a >> 0x01) & 1)  == 0x0; }
+unsigned int b00(unsigned a) { return ((a >> 0x01) & 1)  != 0x0; }
 
+// Form3
 unsigned int b00(unsigned a) { return (a &  0x01)  == 0x01; }
 unsigned int b00(unsigned a) { return (a &  0x01)  != 0x01; }
+
+
+These instructions are suppported in TriCore
+
+xyzzys-iMac:~/projects/TC16% grep "^e " instructions  | grep "\.t"
+e and.and.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x47
+e and.andn.t Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x47
+e and.nor.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0x47
+e and.or.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x47
+e and.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x87
+e andn.t     Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x87
+e ins.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x67
+e insn.t     Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x67
+e jnz.t      Da,scon4a,scon15        Da scon4a scon15 31=0x01 6..0=0x6f
+e jnz.t      D15,zcon4a,zcon4        D15 zcon4a zcon4 7..0=0xae
+e jz.t       Da,scon4a,scon15        Da scon4a scon15 31=0x00 6..0=0x6f
+e jz.t       D15,zcon4a,zcon4        D15 zcon4a zcon4 7..0=0x2e
+e nand.t     Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x07
+e nor.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0x87
+e or.and.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0xc7
+e or.andn.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0xc7
+e or.nor.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0xc7
+e or.or.t    Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0xc7
+e or.t       Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x87
+e orn.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x07
+e sh.and.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x27
+e sh.andn.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x27
+e sh.nand.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0xa7
+e sh.nor.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0x27
+e sh.or.t    Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x27
+e sh.orn.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0xa7
+e sh.xnor.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0xa7
+e sh.xor.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0xa7
+e st.t       abs18,bpos,b            abs18 bpos b 27..26=0x00 7..0=0xd5
+e xnor.t     Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0x07
+e xor.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x07
 
 
 
