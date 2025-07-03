@@ -17,10 +17,10 @@ unsigned int b00(unsigned a) { return (a &  0x01)  != 0x01; }
 These instructions are suppported in TriCore
 
 xyzzys-iMac:~/projects/TC16% grep "^e " instructions  | grep "\.t"
-e and.and.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x47
-e and.andn.t Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x47
-e and.nor.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0x47
-e and.or.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x47
+e and.and.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x47	done
+e and.andn.t Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x47	done
+e and.nor.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0x47	done
+e and.or.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x47	done
 e and.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x87
 e andn.t     Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x87
 e ins.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x67
