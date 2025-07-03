@@ -1,26 +1,25 @@
 #ifndef __MY_ASSERT_H__
 #define __MY_ASSERT_H__
 
+#include <stdio.h>
+#include <string.h>
+
 #ifdef __cplusplus
 #define MY_LOCAL inline
-extern "C" {
 #else
-#define MY_LOCAL static
+#define MY_LOCAL static inline
 #endif
 
 extern int exit_status;
 
-int printf(const char *, ...);
-int strcmp(const char *, const char *);
-
 MY_LOCAL void _my_assert(int passed, char *file, unsigned int line,
                          char *condition) {
   if (passed) {
-#ifdef VERBOSE
-    printf("( -- assertion passed %s:%d : %s -- )\n", file, line, condition);
+#if defined(VERBOSE)
+    printf("( -- Assertion passed %s/%u: %s -- )\n", file, line, condition);
 #endif
   } else {
-    printf("Assertion failed %s:%d : %s\n", file, line, condition);
+    printf("Assertion failed: %s/%u: %s\n", file, line, condition);
     exit_status = 1;
   }
 }
