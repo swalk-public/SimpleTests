@@ -35,7 +35,7 @@ e or.and.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0xc
 e or.andn.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0xc7	done
 e or.nor.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0xc7	done
 e or.or.t    Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0xc7	done
-e or.t       Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x87
+e or.t       Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x87	done
 e orn.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x01 7..0=0x07
 e sh.and.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x00 7..0=0x27
 e sh.andn.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x27
