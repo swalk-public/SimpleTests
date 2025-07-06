@@ -47,7 +47,7 @@ e sh.xnor.t  Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0xa
 e sh.xor.t   Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0xa7
 e st.t       abs18,bpos,b            abs18 bpos b 27..26=0x00 7..0=0xd5
 e xnor.t     Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x02 7..0=0x07
-e xor.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x07
+e xor.t      Dc,Da,zcon5d,Db,zcon5b  Dc Da zcon5d Db zcon5b 22..21=0x03 7..0=0x07	done
 
 
 
