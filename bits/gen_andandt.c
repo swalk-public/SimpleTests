@@ -33,8 +33,8 @@ int main() {
     for (unsigned pos2 = 0; pos2 < 32; pos2++) {
 
       c = 0xa5a5a5a5u; a = 0xa5a5a5a5u; b = 0xa5a5a5a5u;
-      printf("  my_assert(and_and_t_%u_%u(0x%08x, 0x%08x, 0x%08x) == ", pos1, pos2, c, a, b);
-      printf("0x%08x);\n", ((c & 0xfffffffeU) | ((c & 0x1U) & (((a >> pos1) & 1U) & ((b >> pos2) & 1U)))));
+      printf("  my_assert(and_and_t_%u_%u(0x%08xU, 0x%08xU, 0x%08xU) == ", pos1, pos2, c, a, b);
+      printf("0x%08xU);\n", ((c & 0xfffffffeU) | ((c & 0x1U) & (((a >> pos1) & 1U) & ((b >> pos2) & 1U)))));
 
       c = 0xa5a5a5a5u; a = 0xa5a5a5a5u; b = 0x5a5a5a5au;
       printf("  my_assert(and_and_t_%u_%u(0x%08xU, 0x%08xU, 0x%08xU) == ", pos1, pos2, c, a, b);
@@ -45,8 +45,8 @@ int main() {
       printf("0x%08xU);\n", ((c & 0xfffffffeU) | ((c & 0x1U) & (((a >> pos1) & 1U) & ((b >> pos2) & 1U)))));
 
       c = 0xa5a5a5a5u; a = 0x5a5a5a5au; b = 0x5a5a5a5au;
-      printf("  my_assert(and_and_t_%u_%u(0x%08x, 0x%08x, 0x%08x) == ", pos1, pos2, c, a, b);
-      printf("0x%08x);\n", ((c & 0xfffffffeU) | ((c & 0x1U) & (((a >> pos1) & 1U) & ((b >> pos2) & 1U)))));
+      printf("  my_assert(and_and_t_%u_%u(0x%08xU, 0x%08xU, 0x%08xU) == ", pos1, pos2, c, a, b);
+      printf("0x%08xU);\n", ((c & 0xfffffffeU) | ((c & 0x1U) & (((a >> pos1) & 1U) & ((b >> pos2) & 1U)))));
     }
   }
   printf("}");
