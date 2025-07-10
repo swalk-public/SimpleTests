@@ -1,0 +1,23 @@
+
+# grammar to generate conditional expressions
+
+start	term
+term	if SPACE ( factor ) SPACE return SPACE 1 ;
+factor	id
+factor	 id SPACE OP1 SPACE id 
+factor	 id SPACE OP2 SPACE ( SPACE id SPACE OP1 SPACE id )
+factor	( SPACE id SPACE OP1 SPACE id ) SPACE OP2 SPACE id SPACE OP2 SPACE id 
+factor	( SPACE id SPACE OP1 SPACE id ) SPACE OP2 SPACE ( SPACE id SPACE OP1 SPACE id )
+
+OP1	<
+OP1	<=
+OP1	==
+OP1	>=
+OP1	>
+
+OP2	&&
+OP2	||
+
+id	a
+id	b
+id	c
