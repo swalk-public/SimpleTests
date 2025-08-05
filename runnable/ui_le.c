@@ -1,0 +1,302 @@
+
+
+int exit_status;
+#include "my_assert.h"
+
+int le_00000000(unsigned int ui) { return ui <= 0x00000000u; }
+int le_00000001(unsigned int ui) { return ui <= 0x00000001u; }
+int le_00000002(unsigned int ui) { return ui <= 0x00000002u; }
+
+int le_00000003(unsigned int ui) { return ui <= 0x00000003u; }
+int le_00000004(unsigned int ui) { return ui <= 0x00000004u; }
+int le_00000005(unsigned int ui) { return ui <= 0x00000005u; }
+
+int le_00000007(unsigned int ui) { return ui <= 0x00000007u; }
+int le_00000008(unsigned int ui) { return ui <= 0x00000008u; }
+int le_00000009(unsigned int ui) { return ui <= 0x00000009u; }
+
+int le_0000000f(unsigned int ui) { return ui <= 0x0000000fu; }
+int le_00000010(unsigned int ui) { return ui <= 0x00000010u; }
+int le_00000011(unsigned int ui) { return ui <= 0x00000011u; }
+
+int le_0000001f(unsigned int ui) { return ui <= 0x0000001fu; }
+int le_00000020(unsigned int ui) { return ui <= 0x00000020u; }
+int le_00000021(unsigned int ui) { return ui <= 0x00000021u; }
+
+int le_0000003f(unsigned int ui) { return ui <= 0x0000003fu; }
+int le_00000040(unsigned int ui) { return ui <= 0x00000040u; }
+int le_00000041(unsigned int ui) { return ui <= 0x00000041u; }
+
+int le_0000007f(unsigned int ui) { return ui <= 0x0000007fu; }
+int le_00000080(unsigned int ui) { return ui <= 0x00000080u; }
+int le_00000081(unsigned int ui) { return ui <= 0x00000081u; }
+
+int le_000000ff(unsigned int ui) { return ui <= 0x000000ffu; }
+int le_00000100(unsigned int ui) { return ui <= 0x00000100u; }
+int le_00000101(unsigned int ui) { return ui <= 0x00000101u; }
+
+int le_000001ff(unsigned int ui) { return ui <= 0x000001ffu; }
+int le_00000200(unsigned int ui) { return ui <= 0x00000200u; }
+int le_00000201(unsigned int ui) { return ui <= 0x00000201u; }
+
+int le_000003ff(unsigned int ui) { return ui <= 0x000003ffu; }
+int le_00000400(unsigned int ui) { return ui <= 0x00000400u; }
+int le_00000401(unsigned int ui) { return ui <= 0x00000401u; }
+
+int le_000007ff(unsigned int ui) { return ui <= 0x000007ffu; }
+int le_00000800(unsigned int ui) { return ui <= 0x00000800u; }
+int le_00000801(unsigned int ui) { return ui <= 0x00000801u; }
+
+int le_00000fff(unsigned int ui) { return ui <= 0x00000fffu; }
+int le_00001000(unsigned int ui) { return ui <= 0x00001000u; }
+int le_00001001(unsigned int ui) { return ui <= 0x00001001u; }
+
+int le_00001fff(unsigned int ui) { return ui <= 0x00001fffu; }
+int le_00002000(unsigned int ui) { return ui <= 0x00002000u; }
+int le_00002001(unsigned int ui) { return ui <= 0x00002001u; }
+
+int le_00003fff(unsigned int ui) { return ui <= 0x00003fffu; }
+int le_00004000(unsigned int ui) { return ui <= 0x00004000u; }
+int le_00004001(unsigned int ui) { return ui <= 0x00004001u; }
+
+int le_00007fff(unsigned int ui) { return ui <= 0x00007fffu; }
+int le_00008000(unsigned int ui) { return ui <= 0x00008000u; }
+int le_00008001(unsigned int ui) { return ui <= 0x00008001u; }
+
+int le_0000ffff(unsigned int ui) { return ui <= 0x0000ffffu; }
+int le_00010000(unsigned int ui) { return ui <= 0x00010000u; }
+int le_00010001(unsigned int ui) { return ui <= 0x00010001u; }
+
+int le_0001ffff(unsigned int ui) { return ui <= 0x0001ffffu; }
+int le_00020000(unsigned int ui) { return ui <= 0x00020000u; }
+int le_00020001(unsigned int ui) { return ui <= 0x00020001u; }
+
+int le_0003ffff(unsigned int ui) { return ui <= 0x0003ffffu; }
+int le_00040000(unsigned int ui) { return ui <= 0x00040000u; }
+int le_00040001(unsigned int ui) { return ui <= 0x00040001u; }
+
+int le_0007ffff(unsigned int ui) { return ui <= 0x0007ffffu; }
+int le_00080000(unsigned int ui) { return ui <= 0x00080000u; }
+int le_00080001(unsigned int ui) { return ui <= 0x00080001u; }
+
+int le_000fffff(unsigned int ui) { return ui <= 0x000fffffu; }
+int le_00100000(unsigned int ui) { return ui <= 0x00100000u; }
+int le_00100001(unsigned int ui) { return ui <= 0x00100001u; }
+
+int le_001fffff(unsigned int ui) { return ui <= 0x001fffffu; }
+int le_00200000(unsigned int ui) { return ui <= 0x00200000u; }
+int le_00200001(unsigned int ui) { return ui <= 0x00200001u; }
+
+int le_003fffff(unsigned int ui) { return ui <= 0x003fffffu; }
+int le_00400000(unsigned int ui) { return ui <= 0x00400000u; }
+int le_00400001(unsigned int ui) { return ui <= 0x00400001u; }
+
+int le_007fffff(unsigned int ui) { return ui <= 0x007fffffu; }
+int le_00800000(unsigned int ui) { return ui <= 0x00800000u; }
+int le_00800001(unsigned int ui) { return ui <= 0x00800001u; }
+
+int le_00ffffff(unsigned int ui) { return ui <= 0x00ffffffu; }
+int le_01000000(unsigned int ui) { return ui <= 0x01000000u; }
+int le_01000001(unsigned int ui) { return ui <= 0x01000001u; }
+
+int le_01ffffff(unsigned int ui) { return ui <= 0x01ffffffu; }
+int le_02000000(unsigned int ui) { return ui <= 0x02000000u; }
+int le_02000001(unsigned int ui) { return ui <= 0x02000001u; }
+
+int le_03ffffff(unsigned int ui) { return ui <= 0x03ffffffu; }
+int le_04000000(unsigned int ui) { return ui <= 0x04000000u; }
+int le_04000001(unsigned int ui) { return ui <= 0x04000001u; }
+
+int le_07ffffff(unsigned int ui) { return ui <= 0x07ffffffu; }
+int le_08000000(unsigned int ui) { return ui <= 0x08000000u; }
+int le_08000001(unsigned int ui) { return ui <= 0x08000001u; }
+
+int le_0fffffff(unsigned int ui) { return ui <= 0x0fffffffu; }
+int le_10000000(unsigned int ui) { return ui <= 0x10000000u; }
+int le_10000001(unsigned int ui) { return ui <= 0x10000001u; }
+
+int le_1fffffff(unsigned int ui) { return ui <= 0x1fffffffu; }
+int le_20000000(unsigned int ui) { return ui <= 0x20000000u; }
+int le_20000001(unsigned int ui) { return ui <= 0x20000001u; }
+
+int le_3fffffff(unsigned int ui) { return ui <= 0x3fffffffu; }
+int le_40000000(unsigned int ui) { return ui <= 0x40000000u; }
+int le_40000001(unsigned int ui) { return ui <= 0x40000001u; }
+
+int le_7fffffff(unsigned int ui) { return ui <= 0x7fffffffu; }
+int le_80000000(unsigned int ui) { return ui <= 0x80000000u; }
+int le_80000001(unsigned int ui) { return ui <= 0x80000001u; }
+
+int le_ffffffff(unsigned int ui) { return ui <= 0xffffffffu; }
+
+static unsigned int ui;
+int main() {
+  ui = 0x00000000u;
+  my_assert(le_00000000(ui) == 1);
+  my_assert(le_00000001(ui) == 1);
+
+  ui = 0x00000001u;
+  my_assert(le_00000000(ui) != 1);
+  my_assert(le_00000001(ui) == 1);
+  my_assert(le_00000002(ui) == 1);
+
+  ui = 0x00000002u;
+  my_assert(le_00000001(ui) != 1);
+  my_assert(le_00000002(ui) == 1);
+  my_assert(le_00000003(ui) == 1);
+
+  ui = 0x00000004u;
+  my_assert(le_00000003(ui) != 1);
+  my_assert(le_00000004(ui) == 1);
+  my_assert(le_00000005(ui) == 1);
+
+  ui = 0x00000008u;
+  my_assert(le_00000007(ui) != 1);
+  my_assert(le_00000008(ui) == 1);
+  my_assert(le_00000009(ui) == 1);
+
+  ui = 0x00000010u;
+  my_assert(le_0000000f(ui) != 1);
+  my_assert(le_00000010(ui) == 1);
+  my_assert(le_00000011(ui) == 1);
+
+  ui = 0x00000020u;
+  my_assert(le_0000001f(ui) != 1);
+  my_assert(le_00000020(ui) == 1);
+  my_assert(le_00000021(ui) == 1);
+
+  ui = 0x00000040u;
+  my_assert(le_0000003f(ui) != 1);
+  my_assert(le_00000040(ui) == 1);
+  my_assert(le_00000041(ui) == 1);
+
+  ui = 0x00000080u;
+  my_assert(le_0000007f(ui) != 1);
+  my_assert(le_00000080(ui) == 1);
+  my_assert(le_00000081(ui) == 1);
+
+  ui = 0x00000100u;
+  my_assert(le_000000ff(ui) != 1);
+  my_assert(le_00000100(ui) == 1);
+  my_assert(le_00000101(ui) == 1);
+
+  ui = 0x00000200u;
+  my_assert(le_000001ff(ui) != 1);
+  my_assert(le_00000200(ui) == 1);
+  my_assert(le_00000201(ui) == 1);
+
+  ui = 0x00000400u;
+  my_assert(le_000003ff(ui) != 1);
+  my_assert(le_00000400(ui) == 1);
+  my_assert(le_00000401(ui) == 1);
+
+  ui = 0x00000800u;
+  my_assert(le_000007ff(ui) != 1);
+  my_assert(le_00000800(ui) == 1);
+  my_assert(le_00000801(ui) == 1);
+
+  ui = 0x00001000u;
+  my_assert(le_00000fff(ui) != 1);
+  my_assert(le_00001000(ui) == 1);
+  my_assert(le_00001001(ui) == 1);
+
+  ui = 0x00002000u;
+  my_assert(le_00001fff(ui) != 1);
+  my_assert(le_00002000(ui) == 1);
+  my_assert(le_00002001(ui) == 1);
+
+  ui = 0x00004000u;
+  my_assert(le_00003fff(ui) != 1);
+  my_assert(le_00004000(ui) == 1);
+  my_assert(le_00004001(ui) == 1);
+
+  ui = 0x00008000u;
+  my_assert(le_00007fff(ui) != 1);
+  my_assert(le_00008000(ui) == 1);
+  my_assert(le_00008001(ui) == 1);
+
+  ui = 0x00010000u;
+  my_assert(le_0000ffff(ui) != 1);
+  my_assert(le_00010000(ui) == 1);
+  my_assert(le_00010001(ui) == 1);
+
+  ui = 0x00020000u;
+  my_assert(le_0001ffff(ui) != 1);
+  my_assert(le_00020000(ui) == 1);
+  my_assert(le_00020001(ui) == 1);
+
+  ui = 0x00040000u;
+  my_assert(le_0003ffff(ui) != 1);
+  my_assert(le_00040000(ui) == 1);
+  my_assert(le_00040001(ui) == 1);
+
+  ui = 0x00080000u;
+  my_assert(le_0007ffff(ui) != 1);
+  my_assert(le_00080000(ui) == 1);
+  my_assert(le_00080001(ui) == 1);
+
+  ui = 0x00100000u;
+  my_assert(le_000fffff(ui) != 1);
+  my_assert(le_00100000(ui) == 1);
+  my_assert(le_00100001(ui) == 1);
+
+  ui = 0x00200000u;
+  my_assert(le_001fffff(ui) != 1);
+  my_assert(le_00200000(ui) == 1);
+  my_assert(le_00200001(ui) == 1);
+
+  ui = 0x00400000u;
+  my_assert(le_003fffff(ui) != 1);
+  my_assert(le_00400000(ui) == 1);
+  my_assert(le_00400001(ui) == 1);
+
+  ui = 0x00800000u;
+  my_assert(le_007fffff(ui) != 1);
+  my_assert(le_00800000(ui) == 1);
+  my_assert(le_00800001(ui) == 1);
+
+  ui = 0x01000000u;
+  my_assert(le_00ffffff(ui) != 1);
+  my_assert(le_01000000(ui) == 1);
+  my_assert(le_01000001(ui) == 1);
+
+  ui = 0x02000000u;
+  my_assert(le_01ffffff(ui) != 1);
+  my_assert(le_02000000(ui) == 1);
+  my_assert(le_02000001(ui) == 1);
+
+  ui = 0x04000000u;
+  my_assert(le_03ffffff(ui) != 1);
+  my_assert(le_04000000(ui) == 1);
+  my_assert(le_04000001(ui) == 1);
+
+  ui = 0x08000000u;
+  my_assert(le_07ffffff(ui) != 1);
+  my_assert(le_08000000(ui) == 1);
+  my_assert(le_08000001(ui) == 1);
+
+  ui = 0x10000000u;
+  my_assert(le_0fffffff(ui) != 1);
+  my_assert(le_10000000(ui) == 1);
+  my_assert(le_10000001(ui) == 1);
+
+  ui = 0x20000000u;
+  my_assert(le_1fffffff(ui) != 1);
+  my_assert(le_20000000(ui) == 1);
+  my_assert(le_20000001(ui) == 1);
+
+  ui = 0x40000000u;
+  my_assert(le_3fffffff(ui) != 1);
+  my_assert(le_40000000(ui) == 1);
+  my_assert(le_40000001(ui) == 1);
+
+  ui = 0x80000000u;
+  my_assert(le_7fffffff(ui) != 1);
+  my_assert(le_80000000(ui) == 1);
+  my_assert(le_80000001(ui) == 1);
+
+  ui = 0xffffffffu;
+  my_assert(le_ffffffff(ui) == 1);
+
+  return exit_status;
+}
