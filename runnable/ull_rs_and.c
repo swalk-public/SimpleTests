@@ -645,16 +645,6 @@ int main() {
   my_assert(((testBits >> 63) & 0x40ULL) == 0);
   my_assert(((testBits >> 63) & 0x80ULL) == 0);
 
-  /* 0000 0000 */
-  my_assert(((testBits >> 64) & 0x01ULL) == 0);
-  my_assert(((testBits >> 64) & 0x02ULL) == 0);
-  my_assert(((testBits >> 64) & 0x04ULL) == 0);
-  my_assert(((testBits >> 64) & 0x08ULL) == 0);
-  my_assert(((testBits >> 64) & 0x10ULL) == 0);
-  my_assert(((testBits >> 64) & 0x20ULL) == 0);
-  my_assert(((testBits >> 64) & 0x40ULL) == 0);
-  my_assert(((testBits >> 64) & 0x80ULL) == 0);
-
   return exit_status;
 
 #if 0
